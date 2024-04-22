@@ -1,21 +1,15 @@
-public class LinearSearch {
-    public static int linearSearch(int[] arr, int target) {
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] == target) {
-                return i; // Return the index of the target element if found
-            }
-        }
-        return -1; // Return -1 if the target element is not found in the array
-    }
-
-    public static void main(String[] args) {
-        int[] arr = {5, 10, 15, 20, 25, 30};
-        int target = 20;
-        int result = linearSearch(arr, target);
-        if (result != -1) {
-            System.out.println("Element found at index: " + result);
-        } else {
-            System.out.println("Element not found in the array.");
-        }
-    }
-}
+public class LinearSearchExample{    
+public static int linearSearch(int[] arr, int key){    
+        for(int i=0;i<arr.length;i++){    
+            if(arr[i] == key){    
+                return i;    
+            }    
+        }    
+        return -1;    
+    }    
+    public static void main(String a[]){    
+        int[] a1= {10,20,30,50,70,90};    
+        int key = 50;    
+        System.out.println(key+" is found at index: "+linearSearch(a1, key));    
+    }    
+}    
